@@ -1,0 +1,9 @@
+{
+    "idle_threshold": 10,
+    "countdown_time": 180,
+    "messages": {
+        "monitoring_message": "Monitoring system for inactivity...",
+        "countdown_message": "Inactivity detected, jiggling in {seconds} seconds.",
+        "jiggling_message": "Jiggling"
+    }
+}
