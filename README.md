@@ -11,15 +11,6 @@
 ## Requirements
 - Python 3.x
 - Windows OS
-- Python packages:
-  - `MouseInfo`
-  - `PyAutoGUI`
-  - `PyGetWindow`
-  - `PyMsgBox`
-  - `pyperclip`
-  - `PyRect`
-  - `PyScreeze`
-  - `pytweening`
 
 ## Installation
 
@@ -33,21 +24,9 @@
     cd MyJiggler
     ```
 
-3. Create and activate a virtual environment (optional but recommended):
-    - **Windows**:
-      ```bash
-      python -m venv venv
-      .\venv\Scripts\activate
-      ```
-    - **Mac/Linux**:
-      ```bash
-      python3 -m venv venv
-      source venv/bin/activate
-      ```
-
-4. Install the required packages from `requirements.txt`:
+3. Run the application:
     ```bash
-    pip install -r requirements.txt
+    python main.py
     ```
 
 ## Usage
@@ -64,7 +43,7 @@ You can customize the idle threshold, countdown time, and messages by editing th
 
 ## How it Works
 
-The application uses Windows system calls to monitor the time since the last user input (keyboard or mouse). When the idle time exceeds the threshold, the `pyautogui` library is used to move the mouse slightly to keep the system active. A countdown notification is shown before the mouse jiggle.
+The application uses Windows system calls to monitor the time since the last user input (keyboard or mouse). When the idle time exceeds the threshold, the `ctypes` library is used to move the mouse slightly to keep the system active. A countdown notification is shown before the mouse jiggle.
 
 ## License
 
